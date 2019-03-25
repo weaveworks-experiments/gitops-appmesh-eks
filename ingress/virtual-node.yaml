@@ -15,5 +15,3 @@ spec:
   backends:
     - virtualService:
         virtualServiceName: podinfo.test
-    - virtualService:
-        virtualServiceName: podinfo.test
