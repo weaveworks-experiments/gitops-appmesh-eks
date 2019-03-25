@@ -1,0 +1,17 @@
+apiVersion: appmesh.k8s.aws/v1alpha1
+kind: VirtualNode
+metadata:
+  name: flagger-loadtester
+  namespace: test
+spec:
+  meshName: global.appmesh-system
+  listeners:
+    - portMapping:
+        port: 80
+        protocol: http
+  serviceDiscovery:
+    dns:
+      hostName: flagger-loadtester.test
+  backends:
+    - virtualService:
+        virtualServiceName: podinfo.test
