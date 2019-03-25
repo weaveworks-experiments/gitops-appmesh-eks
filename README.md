@@ -13,7 +13,8 @@ Weave Cloud progressive delivery components:
     * automates the promotion of canary deployments 
     * uses App Mesh routing for traffic shifting and Prometheus metrics for canary analysis
 * [Cortex](https://github.com/cortexproject/cortex): Prometheus-as-a-service CNCF project
-    * multi-tenant, horizontally scalable Prometheus that powers Weave Cloud observability features 
+    * multi-tenant, horizontally scalable Prometheus
+    * powers Weave Cloud observability features 
 
 ![Weave Cloud Canary UI](https://raw.githubusercontent.com/weaveworks-experiments/gitops-appmesh-eks/master/docs/screens/weave-cloud-canary-ui.png)
 
