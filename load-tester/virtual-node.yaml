@@ -7,7 +7,7 @@ spec:
   meshName: global.appmesh-system
   listeners:
     - portMapping:
-        port: 8080
+        port: 444
         protocol: http
   serviceDiscovery:
     dns:

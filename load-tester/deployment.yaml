@@ -15,6 +15,9 @@ spec:
         app: flagger-loadtester
       annotations:
         prometheus.io/scrape: "true"
+        # dummy port to exclude the loadtest ingress from mesh traffic
+        # only egress should go over the mesh
+        appmesh.k8s.aws/ports: "444"
     spec:
       containers:
         - name: loadtester
