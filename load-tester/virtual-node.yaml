@@ -1,10 +1,10 @@
-apiVersion: appmesh.k8s.aws/v1alpha1
+apiVersion: appmesh.k8s.aws/v1beta1
 kind: VirtualNode
 metadata:
   name: flagger-loadtester
   namespace: test
 spec:
-  meshName: global.appmesh-system
+  meshName: global
   listeners:
     - portMapping:
         port: 444
